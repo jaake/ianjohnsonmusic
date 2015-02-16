@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+
+
+  <body>
+    <!--<div class="contain-to-grid sticky">
+      <nav class="top-bar" data-topbar role="navigation" data-options="scrolltop:false; is_hover: false">
+        <ul class="title-area">
+          <li class="name"><a href="/"><h1>Ian Johnson</h1></a></li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>   
+        </ul>
+        <section class="top-bar-section">
+          <ul class="right">
+            <li><a href="/home/music">Listen</a></li>
+            <li><a href="/home/video">Watch</a></li>            
+            <li><a href="/home/tour">Tour</a></li>
+            <li><a href="/home/about">About</a></li>
+          </ul>
+        </section>
+      </nav>
+    </div> -->
+
+    <%= yield %>
+
+  </body>
+</html>

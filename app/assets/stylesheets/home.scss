@@ -1,0 +1,53 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville|Special+Elite);
+
+body{
+	background: #000 asset-data-url('ianjohnson-bg.jpg') no-repeat top;
+	& h1 {
+      font-family: 'Libre Baskerville', serif;
+	  text-align: center;
+	  //text-decoration: underline;
+	  color: white;
+	}
+	& p {
+      margin: 0 0 30px 0;
+      font-family: 'Libre Baskerville', serif;
+	  text-align: center;
+	  //text-decoration: underline;
+	  color: white;	
+	}
+}
+
+#album {
+    font-family: 'Special Elite', cursive;
+	color: white;
+	& p {
+	  text-align: left;
+	  font-family: 'Special Elite', cursive;
+	}
+	& h2 {
+      font-family: 'Libre Baskerville', serif;      
+	}
+}
+
+#album_cover {
+	padding: 30px;
+}
+
+#soundcloud {
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    padding: 0 0 0 0;
+	color: white;
+	& p {
+	  font-family: 'Special Elite', cursive;
+	}
+}
+
+#iframe {
+    //width: 350px;	
+    //margin: auto;
+}
